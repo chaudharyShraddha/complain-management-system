@@ -1,0 +1,45 @@
+
+<form action="/user/signup" method="POST">
+
+    <div class="sidenav">
+        <div class="login-main-text">
+            <h2 style="font-weight:bold;">Complain System</h2><h2><br> Signup Page</h2>
+            <p>Login or register from here to access.</p>
+             <p>[ For admin login<br>
+                email:  admin@gmail.com<br>
+                password: admin123 ]
+            </p>
+        </div>
+    </div>
+           
+    <div class="main">
+        <div class="col-md-9 col-sm-12">
+            <div style="margin-top: 140px">
+                 {{> partials}}
+            <div class="form-group">                                                
+                First Name
+                <input type="text" class="form-control" name="name" placeholder="Enter Name" value="{{name}}" style="height: 40px;">
+            </div>
+
+            <div class="form-group">                                                
+                Email Address
+                <input type="email" class="form-control" name="email" placeholder="Enter Email" value="{{email}}" style="height: 40px;">
+            </div>
+
+            <div class="form-group">                                                
+                Password
+                <input type="password" class="form-control" name="password" placeholder="Enter Password" value="{{password}}" style="height: 40px;">
+            </div>
+
+            <div class="form-group">                                                
+                Confirm Password
+                <input type="password" class="form-control" name="password2" placeholder="Re-Enter Password" value="{{password2}}" style="height: 40px;">
+            </div>
+
+            <button class="btn btn-dark" type="submit" style="width: 150px;height:40px"><i class="fas fa-user-plus"></i> Signup</button>
+            <br/>
+            <p class="float-left" style="margin-top:10px">Have an account <a href="/user/login">Login</a></p>
+        </div>
+        </div>
+    </div>	
+</form>

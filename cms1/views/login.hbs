@@ -1,0 +1,35 @@
+
+<form action="/user/login" method="POST">
+
+    <div class="sidenav">
+        <div class="login-main-text">
+            <h2 style="font-weight:bold;">Complain System</h2><h2><br> Login Page</h2>
+            <p>Login or register from here to access.</p>
+            <p>[ For admin login<br>
+                email:  admin@gmail.com<br>
+                password: admin123 ]
+            </p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="col-md-9 col-sm-12">
+           <div style="margin-top: 240px">
+               {{> partials}}
+                <div class="form-group">                                                
+                    Email Address
+                    <input type="email" class="form-control" name="email" placeholder="Enter Email" style="height: 40px;">
+                </div>
+
+                <div class="form-group">                                                
+                    Password
+                    <input type="password" class="form-control" name="password" placeholder="Enter Password" style="height: 40px;">
+                </div>
+
+                <button type="submit" class="btn btn-dark float-left"  style="width: 150px;height:40px"><i class="fas fa-sign-in-alt"></i> Login</button>
+                <br><br><br>
+                 <p class="float-left">Don't have an account <a href="/user/signup">Signup</a></p>
+            </div>
+        </div>
+    </div>	
+</form>
